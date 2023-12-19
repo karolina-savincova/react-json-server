@@ -1,0 +1,43 @@
+{
+  "name": "courses-page-react-json-server",
+  "homepage": "https://Kaya234.github.io/react-json-server",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "bootstrap": "^5.3.2",
+    "concurrently": "^8.2.2",
+    "json-server": "^0.17.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.19.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "set PORT=3006 && react-scripts start",
+    "api": "json-server --watch ./data/db.json",
+    "dev": "set PORT=3006 && react-scripts start",
+    "run-all": "concurrently \"npm run api\" \"npm run dev\"",
+    "build": "react-scripts build",
+    "serve": "set PORT=3006 && serve -s build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-private-property-in-object": "^7.23.4",
+    "@types/node": "^20.9.5",
+    "gh-pages": "^6.1.0"
+  }
+}
