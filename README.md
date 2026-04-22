@@ -1,9 +1,5 @@
 # Courses Demo Page (React + JSON Server)
 
-### **Link to the demo page:** https://kaya234.github.io/react-json-server
-
-### **Link to the API:** https://my-json-server.typicode.com/Kaya234/courses-database/coursesList
-
 Courses Demo Page project showcases a simple yet effective course management system using **React** for the **front-end** and **JSON Server** for the **API**.\
 It provides an intuitive interface to browse through a collection of courses, filter them based on specific category, and search for relevant ones based on name or category. Each course listing includes a brief details, thumbnail, and a button to view more information.
 
